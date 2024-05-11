@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("question_marks_background.jpg");
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+}
+
+#headTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Play</title>
+    <link rel="stylesheet" href="/index.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div id="headTop">
+        <h1>Answer it if you can !!</h1>
+    </div>
+
+    <% if (locals.score) { %>
+        <h2 class="score">Score :<%= score %>
+        </h2>
+        <% } else { %>
+            <h2 class="score">Score : 0 </h2>
+            <% } %>
+                <div id="block">
+
+                    <form action="/submit" method="post">
+
+                        <h1 id="question">
+                            <%= countryName %>
+                        </h1>
+
+                        <div id="insideForm">
+                            <input type="text" name="answer" id="answerID" placeholder="enter you answer here"
+                                autocomplete="off">
+                            <button type="submit">Click to check</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+</body>
+
+</html>
